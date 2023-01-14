@@ -71,7 +71,7 @@
         android:layout_marginRight="30dp"
         android:background="@drawable/custom_button"
         android:hint="Email"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         android:padding="10dp"
         android:textColor="@color/black"
         android:textColorHint="@color/grey1"
@@ -90,7 +90,7 @@
         android:layout_marginTop="70dp"
         android:background="@drawable/custom_button"
         android:hint="Password"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:layout_marginRight="30dp"
         android:padding="10dp"
         android:textColor="@color/black"
@@ -120,6 +120,7 @@
         app:layout_constraintTop_toTopOf="@id/uPassword" />
 
     <Button
+        android:id="@+id/registerBtn"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_marginTop="80dp"
