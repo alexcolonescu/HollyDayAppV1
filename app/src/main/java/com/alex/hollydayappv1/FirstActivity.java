@@ -17,11 +17,19 @@ public class FirstActivity extends AppCompatActivity {
         setContentView(R.layout.activity_first);
 
         btn = findViewById(R.id.btn_navigation);
+        Button btn2 = findViewById(R.id.btn3);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
+                startActivity(intent);
+            }
+        });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),ThirdActivity.class);
                 startActivity(intent);
             }
         });

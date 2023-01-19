@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -24,6 +26,7 @@ public class SecondActivity extends AppCompatActivity {
     ActionBarDrawerToggle actionBarDrawerToggle;
     private Button button;
 
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
@@ -35,12 +38,15 @@ public class SecondActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
         button = (Button) findViewById(R.id.button);
+
+
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.navigationView);
         actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.menu_Open, R.string.close_menu);
@@ -86,6 +92,7 @@ public class SecondActivity extends AppCompatActivity {
                         Log.i("MENU_DRAWER_TAG", "Logout ITEM IS CLICKED");
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
+
                 }
 
 
@@ -98,11 +105,17 @@ public class SecondActivity extends AppCompatActivity {
                 openActivity4();
             }
         });
+
+
+
+
     }
 
     public void openActivity4() {
         Intent intent = new Intent(this, FourActivity.class);
         startActivity(intent);
     }
+
+
 
 }

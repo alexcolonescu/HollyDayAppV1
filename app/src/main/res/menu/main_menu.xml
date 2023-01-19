@@ -53,8 +53,8 @@
             <menu>
 
                 <item android:title="" android:icon="@drawable/ic_baseline_login_24" android:id="@+id/nav_logout"/>
-
-
+                <item android:title="Page 2" android:icon="@drawable/ic_baseline_login_24" android:id="@+id/btn2"/>
+                <item android:title="Page 3" android:icon="@drawable/ic_baseline_login_24" android:id="@+id/btn3"/>
 
 
             </menu>
