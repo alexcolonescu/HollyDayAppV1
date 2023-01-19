@@ -22,30 +22,32 @@ public class SecondActivity extends AppCompatActivity {
     NavigationView navigationView;
     Toolbar toolbar;
     ActionBarDrawerToggle actionBarDrawerToggle;
+    private Button button;
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-      if(actionBarDrawerToggle.onOptionsItemSelected(item)){
+        if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
 
-          return true;
-      }
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
-                    }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-
+        button = (Button) findViewById(R.id.button);
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.navigationView);
         actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.menu_Open, R.string.close_menu);
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -90,8 +92,17 @@ public class SecondActivity extends AppCompatActivity {
                 return true;
             }
         });
-
-
-
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openActivity4();
+            }
+        });
     }
+
+    public void openActivity4() {
+        Intent intent = new Intent(this, FourActivity.class);
+        startActivity(intent);
+    }
+
 }
