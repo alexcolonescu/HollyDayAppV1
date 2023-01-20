@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/user_item_bg"
+    android:padding="4sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4sp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textHoliday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey1"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Holiday name"
+
+        />
+    <TextView
+        android:id="@+id/textDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey1"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:text="Holiday destination"
+
+        />
+    <TextView
+        android:id="@+id/textCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey1"
+        android:textStyle="italic"
+
+        android:textSize="18sp"
+        android:text="Holiday country"
+
+        />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/user_item_bg"
+        android:padding="4sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4sp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonDelete"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:background="@color/purple_200"
+            android:text="DELETE"
+            android:textColor="@color/white1"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonUpdate"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:background="@color/purple_700"
+            android:text="UPDATE"
+            android:textColor="@color/white1"
+            />
+
+    </LinearLayout>
+</LinearLayout>
