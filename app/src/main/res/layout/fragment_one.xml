@@ -10,16 +10,23 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:text="Fragment1"
+        android:layout_gravity="right"
+
+        android:text="Când folosești serviciile noastre, ne încredințezi informațiile tale. Înțelegem că este o mare responsabilitate și ne străduim să le protejăm și să îți oferim putere de decizie în privința acestora.
+
+Scopul acestei Politici de Confidențialitate este să îți explice ce informații colectăm, de ce le colectăm și cum poți să le actualizezi, gestionezi, exporți și să le ștergi.
+
+Dacă legislația Uniunii Europene sau Regatului Unit privind protecția datelor se aplică prelucrării informațiilor tale, poți consulta secțiunea Cerințele europene de mai jos pentru a afla mai multe despre drepturile tale și conformitatea Google cu aceste legi."
         android:textColor="@color/black"
-        android:textSize="26dp" />
+        android:padding="5dp"
+        android:layout_margin="7dp"
+        android:textSize="22dp" />
 
     <Button
         android:id="@+id/frag2Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fragment 2"
+        android:text="Acept"
         android:backgroundTint="@color/grey"
         android:layout_gravity="center_horizontal|bottom"
         android:layout_marginBottom="150dp"
